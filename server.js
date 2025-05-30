@@ -11,7 +11,7 @@ const rateLimiter = new Map();
 
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:3000', // hanya izinkan frontend lokal saat dev
+  origin: 'https://mimi-nouryoku.vercel.app', // hanya izinkan frontend lokal saat dev
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
   credentials: true, // kalau kamu pakai cookie atau auth
