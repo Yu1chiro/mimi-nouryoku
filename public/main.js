@@ -201,7 +201,7 @@ async function generateDialog() {
 
 // Display Dialog
 function displayDialog() {
-    dialogContext.textContent = `Situasi: ${currentQuestion.context}`;
+    dialogContext.textContent = `${currentQuestion.context}`;
     questionInstruction.textContent = currentQuestion.instruction;
     
     dialogSection.classList.remove('hidden');
@@ -485,7 +485,7 @@ function showResult(analysis, userAnswer) {
             </p>
         </div>
         
-        <div class="bg-gray-50 rounded-lg p-6">
+        <div class="bg-gray-50 text-justify rounded-lg p-6">
             <h4 class="font-semibold text-gray-800 mb-3">Analisis:</h4>
             <div class="text-gray-700 leading-relaxed">
                 ${analysis.replace(/\n/g, '<br>')}
