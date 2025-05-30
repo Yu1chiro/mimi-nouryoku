@@ -96,7 +96,7 @@ Petunjuk pembuatan:
 - Gunakan '男の人' dan '女の人' sebagai speaker setelah narasi
 - Gaya bahasa harus casual-futsukei dengan bentuk desu/masu; hindari keigo atau bahasa yang terlalu formal
 - Pertanyaan tidak terbatas pada 'nani wo shimasu ka'; bisa menanyakan maksud, sikap, tindakan selanjutnya, atau interpretasi
-- Empat pilihan jawaban ditulis dalam bahasa Jepang, hanya satu jawaban benar
+- Empat pilihan jawaban ditulis dalam bahasa Jepang, hanya satu jawaban benar jangan bias jawaban benar hanya satu dan itu tetap
 - Output harus hanya JSON seperti format di atas, tanpa penjelasan tambahan apa pun
 `;
 
@@ -150,8 +150,7 @@ Jawaban user: ${userAnswer}
 Jawaban benar: ${question.correct}
 
 Berikan analisis dalam bahasa Indonesia yang menjelaskan:
-1. Mengapa jawaban ini benar?
-2. Apa yang terjadi dalam dialog step by step
+1. Jelaskan jawaban benar anda, jika jawaban user benar tetapkan benar jika salah/keliru berikan penjelasan
 3. Vocabulary atau grammar penting yang digunakan
 
 Format response sebagai teks biasa, tidak perlu JSON.`;
