@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 require('dotenv').config();
 
 const app = express();
@@ -16,7 +17,7 @@ app.use(cors({
   credentials: true, // kalau kamu pakai cookie atau auth
 }));
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Rate limiter middleware
 function checkRateLimit(req, res, next) {
